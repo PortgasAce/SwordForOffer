@@ -8,7 +8,6 @@ import java.util.List;
 
 public class Solution007Test {
 
-
     @Test
     public void test() {
         int[] preOrder = {1, 2, 3, 4, 5};
