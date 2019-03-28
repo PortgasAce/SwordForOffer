@@ -6,7 +6,6 @@ public class Solution011Test {
 
     @Test
     public void test() {
-        // 1 1 2 3 5 8 13 21
         int result1 = new Solution011().minNumberInRotateArray(new int[]{2, 3, 4, 5, 1});
         int result2 = new Solution011().minNumberInRotateArray(new int[]{3, 4, 5, 1, 2});
 
