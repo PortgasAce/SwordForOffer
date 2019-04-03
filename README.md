@@ -23,3 +23,4 @@
 022 - 链表中倒数第 K 个结点 | [code](./src/main/java/com/portgas/Solution022.java) | [test](./src/test/java/com/portgas/Solution022Test.java) |
 023 - 链表中环的入口结点 | [code](./src/main/java/com/portgas/Solution023.java) | [test](./src/test/java/com/portgas/Solution023Test.java) |
 024 - 反转链表 | [code](./src/main/java/com/portgas/Solution024.java) | [test](./src/test/java/com/portgas/Solution024Test.java) |
+025 - 合并两个排序的链表 | [code](./src/main/java/com/portgas/Solution025.java) | [test](./src/test/java/com/portgas/Solution025Test.java) |
