@@ -26,3 +26,4 @@
 025 - 合并两个排序的链表 | [code](./src/main/java/com/portgas/Solution025.java) | [test](./src/test/java/com/portgas/Solution025Test.java) |
 026 - 树的子结构 | [code](./src/main/java/com/portgas/Solution026.java) | [test](./src/test/java/com/portgas/Solution026Test.java) |
 027 - 二叉树的镜像 | [code](./src/main/java/com/portgas/Solution027.java) | [test](./src/test/java/com/portgas/Solution027Test.java) |
+028 - 对称的二叉树 | [code](./src/main/java/com/portgas/Solution028.java) | [test](./src/test/java/com/portgas/Solution028Test.java) |
