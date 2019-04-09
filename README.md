@@ -31,3 +31,4 @@
 030 - 包含 min 函数的栈 | [code](./src/main/java/com/portgas/Solution030.java) | [test](./src/test/java/com/portgas/Solution030Test.java) |
 031 - 栈的压入、弹出序列 | [code](./src/main/java/com/portgas/Solution031.java) | [test](./src/test/java/com/portgas/Solution031Test.java) |
 032 - 从上往下打印二叉树 | [code](./src/main/java/com/portgas/Solution032.java) | [test](./src/test/java/com/portgas/Solution032Test.java) |
+032 - 把二叉树打印成多行 | [code](./src/main/java/com/portgas/Solution032.java) | [test](./src/test/java/com/portgas/Solution032Test.java) |

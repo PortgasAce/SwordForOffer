@@ -43,4 +43,34 @@ public class Solution032 {
         return ret;
     }
 
+    /**
+     * 把二叉树打印成多行：
+     * 从上到下按层打印二叉树，同一层结点从左至右输出。每一层输出一行。
+     **/
+    ArrayList<ArrayList<Integer>> print(TreeNode pRoot) {
+        ArrayList<ArrayList<Integer>> ret = new ArrayList<>();
+        if (pRoot == null) {
+            return ret;
+        }
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(pRoot);
+        while (!queue.isEmpty()) {
+            int layerSize = queue.size();
+            ArrayList<Integer> layer = new ArrayList<>();
+            while (layerSize-- > 0) {
+                TreeNode node = queue.poll();
+                layer.add(node.val);
+                if (node.left != null) {
+                    queue.add(node.left);
+                }
+                if (node.right != null) {
+                    queue.add(node.right);
+                }
+            }
+            ret.add(layer);
+        }
+
+        return ret;
+    }
+
 }
