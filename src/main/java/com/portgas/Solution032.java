@@ -3,6 +3,7 @@ package com.portgas;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Stack;
 
 public class Solution032 {
 
@@ -70,6 +71,55 @@ public class Solution032 {
             ret.add(layer);
         }
 
+        return ret;
+    }
+
+    /**
+     * 按之字形顺序打印二叉树：
+     * 请实现一个函数按照之字形打印二叉树，即第一行按照从左到右的顺序打印，
+     * 第二层按照从右至左的顺序打印，第三行按照从左到右的顺序打印，其他行以此类推。
+     **/
+    public ArrayList<ArrayList<Integer>> print2(TreeNode pRoot) {
+        ArrayList<ArrayList<Integer>> ret = new ArrayList<>();
+        if (pRoot == null) {
+            return ret;
+        }
+
+        Stack<TreeNode> s1 = new Stack<>(); // odd
+        s1.add(pRoot);
+        Stack<TreeNode> s2 = new Stack<>(); // even
+
+        while (!s1.isEmpty() || !s2.isEmpty()) {
+            if (!s1.isEmpty()) {
+                // odd
+                ArrayList<Integer> layer = new ArrayList<>();
+                while (!s1.isEmpty()) {
+                    TreeNode p = s1.pop();
+                    layer.add(p.val);
+                    if (p.left != null) {
+                        s2.add(p.left);
+                    }
+                    if (p.right != null) {
+                        s2.add(p.right);
+                    }
+                }
+                ret.add(layer);
+            } else {
+                // even
+                ArrayList<Integer> layer = new ArrayList<>();
+                while (!s2.isEmpty()) {
+                    TreeNode p = s2.pop();
+                    if (p.right != null) {
+                        s1.add(p.right);
+                    }
+                    if (p.left != null) {
+                        s1.add(p.left);
+                    }
+                    layer.add(p.val);
+                }
+                ret.add(layer);
+            }
+        }
         return ret;
     }
 
