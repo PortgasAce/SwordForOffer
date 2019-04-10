@@ -34,3 +34,4 @@
 032 - 把二叉树打印成多行 | [code](./src/main/java/com/portgas/Solution032.java) | [test](./src/test/java/com/portgas/Solution032Test.java) |
 032- 按之字形顺序打印二叉树 | [code](./src/main/java/com/portgas/Solution032.java) | [test](./src/test/java/com/portgas/Solution032Test.java) |
 033- 二叉搜索树的后序遍历序列 | [code](./src/main/java/com/portgas/Solution033.java) | [test](./src/test/java/com/portgas/Solution033Test.java) |
+034- 二叉树中和为某一值的路径 | [code](./src/main/java/com/portgas/Solution034.java) | [test](./src/test/java/com/portgas/Solution034Test.java) |
