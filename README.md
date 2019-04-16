@@ -37,3 +37,4 @@
 034- 二叉树中和为某一值的路径 | [code](./src/main/java/com/portgas/Solution034.java) | [test](./src/test/java/com/portgas/Solution034Test.java) |
 035- 复杂链表的复制 | [code](./src/main/java/com/portgas/Solution035.java) | [test](./src/test/java/com/portgas/Solution035Test.java) |
 036- 二叉搜索树与双向链表 | [code](./src/main/java/com/portgas/Solution036.java) | [test](./src/test/java/com/portgas/Solution036Test.java) |
+037- 序列化二叉树 | [code](./src/main/java/com/portgas/Solution037.java) | [test](./src/test/java/com/portgas/Solution037Test.java) |
