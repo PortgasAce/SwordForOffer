@@ -38,3 +38,4 @@
 035- 复杂链表的复制 | [code](./src/main/java/com/portgas/Solution035.java) | [test](./src/test/java/com/portgas/Solution035Test.java) |
 036- 二叉搜索树与双向链表 | [code](./src/main/java/com/portgas/Solution036.java) | [test](./src/test/java/com/portgas/Solution036Test.java) |
 037- 序列化二叉树 | [code](./src/main/java/com/portgas/Solution037.java) | [test](./src/test/java/com/portgas/Solution037Test.java) |
+038- 字符串的排列 | [code](./src/main/java/com/portgas/Solution038.java) | [test](./src/test/java/com/portgas/Solution038Test.java) |
