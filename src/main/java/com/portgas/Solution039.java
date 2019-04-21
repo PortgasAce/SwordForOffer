@@ -1,46 +1,28 @@
 package com.portgas;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
-public class Solution038 {
+public class Solution039 {
 
     /**
-     * 字符串的排列：
-     * 输入一个字符串,按字典序打印出该字符串中字符的所有排列。
-     * 例如输入字符串abc,则打印出由字符a,b,c所能排列出来的所
-     * 有字符串abc,acb,bac,bca,cab和cba。
+     * 数组中出现次数超过一半的数字：
+     * 数组中有一个数字出现的次数超过数组长度的一半，请找出这个数字。
+     * 例如输入一个长度为9的数组{1,2,3,2,2,2,5,4,2}。由于数字2在
+     * 数组中出现了5次，超过数组长度的一半，因此输出2。如果不存在则
+     * 输出0。
      **/
-
-    public ArrayList<String> permutation(String str) {
-        ArrayList<String> ret = new ArrayList<>();
-        if (str.length() == 0) {
-            return ret;
-        }
-        char[] chars = str.toCharArray();
-        Arrays.sort(chars);
-        backtracking(chars, new boolean[chars.length], new StringBuilder(), ret);
-        return ret;
-    }
-
-    private void backtracking(char[] chars, boolean[] hasUsed, StringBuilder s, ArrayList<String> ret) {
-        if (s.length() == chars.length) {
-            ret.add(s.toString());
-            return;
-        }
-        for (int i = 0; i < chars.length; i++) {
-            if (hasUsed[i]) {
-                continue;
+    public int moreThanHalfNumSolution(int[] array) {
+        int majority = array[0];
+        for (int i = 1, cnt = 1; i < array.length; i++) {
+            cnt = array[i] == majority ? cnt + 1 : cnt - 1;
+            if (cnt == 0) {
+                majority = array[i];
+                cnt = 1;
             }
-            if (i != 0 && chars[i] == chars[i - 1] && !hasUsed[i - 1]) {
-                continue;
-            }
-            hasUsed[i] = true;
-            s.append(chars[i]);
-            backtracking(chars, hasUsed, s, ret);
-            s.deleteCharAt(s.length() - 1);
-            hasUsed[i] = false;
         }
+        int cnt = 0;
+        for (int val : array)
+            if (val == majority)
+                cnt++;
+        return cnt > array.length / 2 ? majority : 0;
     }
 
 }
