@@ -42,3 +42,4 @@
 039- 数组中出现次数超过一半的数字 | [code](./src/main/java/com/portgas/Solution039.java) | [test](./src/test/java/com/portgas/Solution039Test.java) |
 040- 最小的K个数 | [code](./src/main/java/com/portgas/Solution040.java) | [test](./src/test/java/com/portgas/Solution040Test.java) |
 041- 数据流中的中位数 | [code](./src/main/java/com/portgas/Solution041.java) | [test](./src/test/java/com/portgas/Solution041Test.java) |
+041- 字符流中第一个不重复的字符 | [code](./src/main/java/com/portgas/Solution041.java) | [test](./src/test/java/com/portgas/Solution041Test.java) |
