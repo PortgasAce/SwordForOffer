@@ -44,3 +44,4 @@
 041- 数据流中的中位数 | [code](./src/main/java/com/portgas/Solution041.java) | [test](./src/test/java/com/portgas/Solution041Test.java) |
 041- 字符流中第一个不重复的字符 | [code](./src/main/java/com/portgas/Solution041_2.java) | [test](./src/test/java/com/portgas/Solution041_2Test.java) |
 042- 连续子数组的最大和 | [code](./src/main/java/com/portgas/Solution042.java) | [test](./src/test/java/com/portgas/Solution042Test.java) |
+043- 从1到n整数中1出现的次数 | [code](./src/main/java/com/portgas/Solution043.java) | [test](./src/test/java/com/portgas/Solution043Test.java) |
